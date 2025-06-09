@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0
+    <title>Корейская Кухня - Электронная Книга</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+      </script>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+            header {
+            background-color: #8a2e1e;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Контейнеры для контента */
+        .section {
+            padding: 40px 20px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #8a2e1e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* О нас */
+        .about-text {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+        }
+
+        /* Блоки с блюдами */
+        .dish-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .dish-card {
+            background-color: #f9f3e7;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: calc(33% - 40px);
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .dish-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .dish-card:hover {
+            transform: scale(1.05);
+        }
+
+        .dish-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #8a2e1e;
+            margin-top: 15px;
+        }
+
+        .dish-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .btn-more {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #8a2e1e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-more:hover {
+            background-color: #6a1b18;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .dish-card {
+                width: calc(50% - 40px);
+            }
+        }
+  /* CSS для плавной прокрутки */
+        html {
+            scroll-behavior: smooth;
+        }
+        footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 0.9em;
+}
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Уменьшение размера логотипа</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo img {
+      width: 200px; /* Устанавливаем ширину логотипа */
+      height: auto; /* Высота будет изменяться пропорционально */
+    }
+    </style>
+</head>
+<body>
+
+<header>
+<body>
+
+  <div class="logo">
+    <img src="C:\Users\fatim\Downloads\Изображение WhatsApp 2024-09-10 в 09.56.59_153284f7.png" alt="Логотип">
+  </div>
+
+</body>
+    <h1>Электронная книга </h1>
+<h1> "Корейская кухня"</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#first-dishes">Первое блюдо</a></li>
+        <li><a href="#second-dishes">Второе блюдо</a></li>
+        <li><a href="#desserts">Десерты</a></li>
+    </ul>
+</nav>
+
+<!-- О нас -->
+<section id="about" class="section">
+    <h2>О нас</h2>
+    <div class="about-text">
+        <p>Мы предлагаем вам уникальную возможность погрузиться в мир корейской кухни. Наши рецепты собраны из лучших традиций, с использованием свежих и натуральных ингредиентов.</p>
+        <p>Наша цель - поделиться с вами любовью к корейской культуре и кухне, которая соединяет в себе богатые вкусы и ароматы. В этой электронной книге вы найдете 30 популярных блюд: первые и вторые блюда, а также сладкие десерты!</p>
+    </div>
+</section>
+
+<!-- Первое блюдо -->
+<section id="first-dishes" class="section">
+    <h2>Первое блюдо</h2>
+    <div class="dish-list">
+        <div class="dish-card">
+            <img src=https://i.ytimg.com/vi/9LhtldUz4Xg/maxresdefault.jpg alt="Кимчи">
+            <div class="dish-name">Кимчи</div>
+            <div class="dish-description">Остросоленая ферментированная капуста — одно из самых известных блюд в Корее.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+        <div class="dish-card">
+            <img src=https://n1s1.hsmedia.ru/71/6d/82/716d820b3f3507e1b6b47b7ebe0be628/2122x1412_0xYKK5jSGx_0037558784144162698.jpg alt="Ттокбукки">
+            <div class="dish-name">Ттокбукки</div>
+            <div class="dish-description">Токпоки — это традиционное корейское блюдо, в основу которого положены рисовые клецки или жгутики.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+        <!-- Добавьте другие блюда -->
+  <div class="dish-list">
+        <div class="dish-card">
+            <img src=https://i.pinimg.com/originals/cc/d4/34/ccd43457cbf3cd61bf980c043de14e47.jpg alt="Сундэ">
+            <div class="dish-name">Сундэ</div>
+            <div class="dish-description">это блюдо корейской кухни, представляющее собой кровяную колбасу.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+        <div class="dish-card">
+            <img src=https://i.ytimg.com/vi/NhUYo3NgmQM/maxresdefault.jpg alt="Твенджан ччигэ">
+            <div class="dish-name">Твенджан чиге</div>
+            <div class="dish-description">острая похлебка с мясом и овощами..</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+ <div class="dish-card">
+            <img src=https://i.ytimg.com/vi/QVXsbaX6VM8/maxresdefault.jpg alt="Сиряги тямури">
+            <div class="dish-name">Сиряги тямури</div>
+            <div class="dish-description">Острое блюдо из рисовых лепешек с соусом из пасты чили и рыбы.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+ <div class="dish-card">
+            <img src=https://i.pinimg.com/originals/54/57/e4/5457e402864ebd91e3aae2a351c03190.jpg alt="Куксу">
+            <div class="dish-name">Куксу</div>
+            <div class="dish-description">Острое блюдо из рисовых лепешек с соусом из пасты чили и рыбы.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+<div class="dish-card">
+            <img src=https://www.augsburg.edu/sabo/wp-content/uploads/sites/53/2015/10/kimbap1.jpg alt="Кимпаб">
+            <div class="dish-name">Кимбап</div>
+            <div class="dish-description">Острое блюдо из рисовых лепешек с соусом из пасты чили и рыбы.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+<div class="dish-card">
+            <img src=https://i.pinimg.com/originals/6b/9b/5b/6b9b5bb3962f21a9a6e7e77906b29c83.jpg alt="Чиргум-ча ">
+            <div class="dish-name">Чиргум-ча</div>
+            <div class="dish-description">Острое блюдо из рисовых лепешек с соусом из пасты чили и рыбы.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+<div class="dish-card">
+            <img src=https://i.pinimg.com/originals/f7/97/26/f79726566eb7554a1617cf82f32676bc.jpg alt="Пибимпаб">
+            <div class="dish-name">Пибимпаб</div>
+            <div class="dish-description">Острое блюдо из рисовых лепешек с соусом из пасты чили и рыбы.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+<div class="dish-card">
+            <img src=https://cs9.pikabu.ru/post_img/2016/11/22/4/og_og_1479789645271246788.jpg alt="Камди-ча">
+            <div class="dish-name">Камди-ча</div>
+            <div class="dish-description">Острое блюдо из рисовых лепешек с соусом из пасты чили и рыбы.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+    </div>
+</section>
+
+<!-- Второе блюдо -->
+<section id="second-dishes" class="section">
+    <h2>Второе блюдо</h2>
+    <div class="dish-list">
+        <div class="dish-card">
+            <img src=https://i.pinimg.com/736x/47/4c/97/474c97ddc2f0a9b7c3dced2f27e5446c.jpg alt="Бибимбап">
+            <div class="dish-name">Бибимбап</div>
+            <div class="dish-description">Рис с овощами, мясом, яйцом и острым соусом. Очень популярное корейское блюдо.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+        <div class="dish-card">
+            <img src=https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67967f874fd4cc3f7d5e86c6_67a9021e0ef3f52ad6f6c582/scale_1200 alt="Самгёпсаль">
+            <div class="dish-name">Самгёпсаль</div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+        <!-- Добавьте другие блюда -->
+ <div class="dish-card">
+           <img src=https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67967f874fd4cc3f7d5e86c6_67a9021e0ef3f52ad6f6c582/scale_1200 alt="Хве">
+            <div class="dish-name">Хве</div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://i.ytimg.com/vi/-qC3ew_hC64/maxresdefault.jpg alt="Чапсаль">
+            <div class="dish-name">Чапсаль </div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://i.ytimg.com/vi/-qC3ew_hC64/maxresdefault.jpg alt="Джукуми">
+            <div class="dish-name">Джукуми</div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src= https://i.ytimg.com/vi/OZEW_FbTAHw/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgXCg_MA8=&amp;rs=AOn4CLBgtDF2aJALM2mEgXDj9GZVBSeMOg alt="Миёккук">
+            <div class="dish-name">Миёккук</div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://eda.ru/images/RecipeOpenGraph/1200x630/he-iz-doradi_51921_ogimage.jpg alt="Хе из дорады">
+            <div class="dish-name">Хе из дорады </div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://img.povar.ru/uploads/9d/2d/35/af/lapsha_quotnenmyonquot-735509.jpg alt="Нэнмён">
+            <div class="dish-name"Нэнмён</div>
+            <div class="dish-description">Куски свинины, жареные на гриле, подаются с овощами и соусами.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+
+</section>
+
+<!-- Десерты -->
+<section id="desserts" class="section">
+    <h2>Десерты</h2>
+    <div class="dish-list">
+        <div class="dish-card">
+            <img src=https://i.pinimg.com/736x/04/3f/5b/043f5bcfff2f7f891a703097f39adebe.jpg alt="Сонпхён">
+            <div class="dish-name">Сонпхён</div>
+            <div class="dish-description">Корейские оладьи, подаются с соевым соусом.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+        <div class="dish-card">
+            <img src=https://sun9-65.userapi.com/impg/Oyh4KBWKuNwL3Yxxfjg6KkVawCUss5eAuJZyhQ/fhwZUXr3wTE.jpg?size=604x454&quality=95&sign=e9d9e67112011fa58ea90ab6f6e70542&type=album alt="Дасик ">
+            <div class="dish-name">Дасик </div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://rk3000.ru/upload/iblock/fa0/tews0e8ql2qvw2dok1t2uy71lzkmsikk.jpg  alt="Чапсальтток">
+            <div class="dish-name">Чапсальтток</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src= https://i.ytimg.com/vi/xJLkeSi2Z40/maxresdefault.jpg alt="Ходо-гваджа">
+            <div class="dish-name">Ходо-гваджа</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://i.pinimg.com/originals/01/91/2b/01912b499c1bd7182e4276ac4864d443.jpg alt="Бунгеоппанг">
+            <div class="dish-name">Бунгеоппанг</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://cdn.lifehacker.ru/wp-content/uploads/2020/07/5_1594135014-scaled-1024x678.jpg alt="Хотток">
+            <div class="dish-name">Хотток</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src= https://i.ytimg.com/vi/Mht0NOVs6EA/maxresdefault.jpg alt="Готгамссам ">
+            <div class="dish-name">Готгамссам </div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src= https://balthazar.club/uploads/posts/2022-10/1666002224_19-balthazar-club-p-koreiskie-traditsionnie-sladosti-krasivo-19.jpg alt="Бинсу">
+            <div class="dish-name">Бинсу</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://i.vietgiaitri.com/2019/2/7/7-mon-an-khong-the-bo-lo-khi-den-han-quoc-vao-dip-tet-am-lich-9174a9.jpg alt="Яксик">
+            <div class="dish-name">Яксик</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+ <div class="dish-card">
+            <img src=https://avatars.dzeninfra.ru/get-zen_doc/1565406/pub_6512d06c6e8ca52c77e0e00f_6515043d13eb5812c2e87625/scale_1200 alt="Буккуми">
+            <div class="dish-name">Буккуми</div>
+            <div class="dish-description">Сладкое корейское мороженое с пастой из красной фасоли.</div>
+            <a href="#" class="btn-more">Подробнее</a>
+        </div>
+
+</section>
+<footer>
+  <small>&copy; 2024 Все права защищены.</small>
+</footer>
+</body>
+</html>
